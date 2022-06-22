@@ -1,15 +1,16 @@
 const cart = ['burro', 'lievito', 'pane', 'nutella', 'motosega'];
+const cartElement = document.getElementById('carrello')
 
-const cartElement = document.getElementById('carrello');
-console.log(cartElement);
 let i = 0;
 
 while ( i < (cart.length)){
-    const elementoSpesa = document.createElement('li');
-    elementoSpesa.innerText = cart[i];
-    cartElement.append(elementoSpesa);
-     i++
+    const nuovoElemento = document.createElement('li');
+    nuovoElemento.innerHTML = cart[i];
+    cartElement.append(nuovoElemento);
+    i++;
     
+    
+     
 }
 
 
